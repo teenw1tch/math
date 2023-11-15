@@ -12,7 +12,6 @@ namespace ConsoleApp1
             double y;
             string OutputFormat = "{0:F4} {1:F4}";
             Console.WriteLine(OutputFormat, "x", "y");
-            Console.WriteLine("Hello World!"); 
 
 
             for (double x = x1; x <= x2; x += dx)
@@ -36,7 +35,7 @@ namespace ConsoleApp1
             Table(0, Math.PI / 10, Math.PI, function);
 
             int totalLines = System.IO.File.ReadAllLines(System.Reflection.Assembly.GetExecutingAssembly().Location).Length;
-            int totalCommentLines = 57; 
+            int totalCommentLines = 121; 
             double commentRatio = (double)totalCommentLines / totalLines;
             Console.WriteLine($"Уровень комментированности программы {totalCommentLines}:{totalLines}={commentRatio:F4}");
 
